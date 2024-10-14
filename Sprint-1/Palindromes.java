@@ -1,20 +1,19 @@
 import java.util.*;
 public class Palindromes{
+    public static void palindrome(int n){
+        int m=n;
+        int rev=0;
+        while(m>0){
+            int lastDigit=m%10;
+            rev=lastDigit+(rev*10);
+            m=m/10;
+        }
+        System.out.println("Reverse of factorial is: "+rev);
+    }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        int n,s=0,c,r;
         System.out.print("Enter the number: ");
-        n=sc.nextInt();
-        c=n;
-        while(n>0){
-            r=n%10;
-            s=(s*10)+r;
-            n=n/10;
-        }
-        if(c==s){
-            System.out.print("Palindrome number");
-        }else{
-            System.out.print("Not Palindrome number");
-        }
+        int n=sc.nextInt();
+        palindrome(n);
     }
 }

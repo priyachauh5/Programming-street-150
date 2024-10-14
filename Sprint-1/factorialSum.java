@@ -1,53 +1,28 @@
-// import java.util.*;
-// public class factorialSum{
-//     public static void main(String args[]){
-//         Scanner sc=new Scanner(System.in);
-//         int n, fact=1, sum=0;
-//         System.out.print("Enter the Number: ");
-//         n=sc.nextInt();
-//         for(int i=1; i<=n; i++){
-//             fact=fact*i;
-//             sum=sum+fact;
-//         }
-//         System.out.println("Factorail is: "+fact);
-//         System.out.print("Sum of factorial is: "+sum);
-//     }
-// }
-
-import java.math.BigInteger;
-import java.util.Scanner;
-
-public class factorialSum {
-
-    // Method to calculate factorial using BigInteger
-    public static BigInteger factorial(int n) {
-        BigInteger result = BigInteger.ONE;
-        for (int i = 2; i <= n; i++) {
-            result = result.multiply(BigInteger.valueOf(i));
+import java.util.*;
+public class factorialSum{
+    public static int factorial(int n){
+        int f=1;
+        for(int i=1; i<=n; i++){
+            f=f*i;
         }
-        return result;
-    }
-
-    // Method to calculate the sum of the digits
-    public static int sumOfDigits(BigInteger number) {
-        int sum = 0;
-        String numberStr = number.toString();
-        for (char digit : numberStr.toCharArray()) {
-            sum += Character.getNumericValue(digit);
+        System.out.println("Factorail of "+n+" is: "+f);
+        int num=f;
+        int rev=0;
+        int sum=0;
+        while(num>0){
+            int lastDigit=num%10;
+            rev=lastDigit+(rev*10);
+            num=num/10;
+            sum=sum+lastDigit;
         }
-        return sum;
+        System.out.println("Reverse of factorial is: "+rev);
+        System.out.print("Sum of factorial is: "+sum);
+        return rev;
     }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
-        
-        BigInteger fact = factorial(number);
-        int digitSum = sumOfDigits(fact);
-        
-        System.out.println("The sum of the digits of " + number + "! is: " + digitSum);
-        
-        scanner.close();
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number to find factorial: ");
+        int n=sc.nextInt();
+        factorial(n);
     }
 }
