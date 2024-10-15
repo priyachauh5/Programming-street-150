@@ -1,5 +1,5 @@
 import java.util.*;
-public class nar{
+public class armstrongno4{
     public static void main(String args[]){
         int n,arm=0,rem,c;
         System.out.print("Enter the Number: ");
@@ -12,9 +12,9 @@ public class nar{
             n=n/10;
         }
         if(c==arm){
-            System.out.print("Narcissistic Number");
+            System.out.print("Armstrong Number");
         }else{
-             System.out.print("Not Narcissistic Number");
+            System.out.print("Not Armstrong Number");
         }
     }
 }

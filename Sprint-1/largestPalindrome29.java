@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class largestPalindrome{
+public class largestPalindrome29{
 
     // Method to check if a string is a palindrome
     public static boolean isPalindrome(String str) {

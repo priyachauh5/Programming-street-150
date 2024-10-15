@@ -1,5 +1,5 @@
 import java.util.*;
-public class findMissingno{
+public class findMissingno30{
     public static void main(String[] args){
         int[] array={1,1,2,3,5,5,7,9,9,9};
         int[] register=new int[array.length];

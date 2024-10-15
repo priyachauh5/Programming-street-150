@@ -1,5 +1,5 @@
 import java.util.*;
-public class factorial{
+public class factorial8{
     public static void factorial(int n){
         int f=1;
         for(int i=1; i<=n; i++){

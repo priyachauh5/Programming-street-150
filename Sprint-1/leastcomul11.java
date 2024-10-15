@@ -1,5 +1,5 @@
 import java.util.*;
-public class gcd{
+public class leastcomul11{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int a,b;
@@ -13,6 +13,7 @@ public class gcd{
             }
             
         }
-        System.out.println("GCD= "+g);
+        int lcm=a*b/g;
+        System.out.println("LCM= "+lcm);
     }
 }

@@ -1,5 +1,5 @@
 import java.util.*;
-public class smallandLargeno{
+public class smallandLargeno14{
     public static void main(String args[]){
         int numbers[]={4,7,1,8,5};
         int largest=numbers[0];

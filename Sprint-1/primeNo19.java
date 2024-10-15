@@ -1,6 +1,6 @@
 import java.util.*;
 public class primeNo{
-    public static void primeNo(int n, int m){
+    public static void primeNo19(int n, int m){
         int j;
        for(int i=n; i<=m; i++){
             for(j=2; j<=i; j++){

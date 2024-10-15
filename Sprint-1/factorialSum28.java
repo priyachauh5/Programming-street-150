@@ -1,5 +1,5 @@
 import java.util.*;
-public class factorialSum{
+public class factorialSum28{
     public static int factorial(int n){
         int f=1;
         for(int i=1; i<=n; i++){

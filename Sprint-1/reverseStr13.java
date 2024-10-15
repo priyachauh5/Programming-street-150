@@ -1,6 +1,6 @@
 import java.util.*;
-public class Palindromes{
-    public static void palindrome(int n){
+public class reverseStr13{
+    public static void reverseStr(int n){
         int m=n;
         int rev=0;
         while(m>0){
@@ -8,12 +8,13 @@ public class Palindromes{
             rev=lastDigit+(rev*10);
             m=m/10;
         }
-        System.out.println("Reverse of factorial is: "+rev);
+        System.out.print("Reverse of the String is: "+rev);
     }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the number: ");
+        System.out.print("Enter the String: ");
         int n=sc.nextInt();
-        palindrome(n);
+        reverseStr(n);
     }
+    
 }

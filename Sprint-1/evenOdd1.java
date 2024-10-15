@@ -1,5 +1,5 @@
 import java.util.*;
-public class evenOdd{
+public class evenOdd1{
     public static void evenOdd(int n){
         if(n%2==0){
             System.out.print("Number is Even");

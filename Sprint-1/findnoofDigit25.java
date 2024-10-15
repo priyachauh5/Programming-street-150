@@ -1,5 +1,5 @@
 import java.util.*;
-public class findnoofDigit{
+public class findnoofDigit25{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int count=0;

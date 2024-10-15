@@ -1,5 +1,5 @@
 import java.util.*;
-public class findarmStrongno{
+public class findarmStrongno17{
     public static void main(String args[]){
         int number;
         Scanner sc=new Scanner(System.in);

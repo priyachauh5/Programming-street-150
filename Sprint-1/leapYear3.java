@@ -1,5 +1,5 @@
 import java.util.*;
-public class leapYear{
+public class leapYear3{
     public static void main(String args[]){
         int n;
         System.out.println("Enter the number: ");

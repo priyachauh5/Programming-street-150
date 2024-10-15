@@ -1,5 +1,5 @@
 import java.util.*;
-public class searchFibno{
+public class searchFibno23{
     public static void main(String args[]){ 
         int arr[]={0,1,1,2,3,5,8,13,21,34,55};
         Scanner sc=new Scanner(System.in);

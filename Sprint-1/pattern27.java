@@ -1,5 +1,5 @@
 import java.util.*;
-public class pattern{
+public class pattern27{
     public static void numPattern(int n){
         int num=1;
         for(int i=1; i<=n; i++){

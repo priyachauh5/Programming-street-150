@@ -1,5 +1,5 @@
 import java.util.*;
-public class evenSum{
+public class evenSum21{
     public static void evenSum(int n, int m){
         int sum=0;
         for(int i=n; i<=m; i++){

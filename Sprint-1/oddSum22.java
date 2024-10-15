@@ -1,5 +1,5 @@
 import java.util.*;
-public class oddSum{
+public class oddSum22{
     public static void oddSum(int n, int m){
         int sum=0;
         for(int i=n; i<=m; i++){

@@ -1,5 +1,5 @@
 import java.util.*;
-public class vowelConst{
+public class vowelConst12{
     void count(String str){
         int vowels=0, consonants=0;
         str=str.toUpperCase();

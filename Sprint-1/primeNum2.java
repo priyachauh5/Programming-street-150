@@ -1,5 +1,5 @@
 import java.util.*;
-public class primeNum{
+public class primeNum2{
     public static void primeNo(int n){
         int m=n;
         //corner case

@@ -1,5 +1,5 @@
 import java.util.*;
-public class mutipliTable{
+public class mutipliTable18{
     public static void multiple(int n){
         for(int i=0; i<=10; i++){
             int mult=n*i;
