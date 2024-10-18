@@ -1,4 +1,4 @@
-public class largestandsmall{
+public class largestandsmall14{
     public static void largest(int array[]){
        int largest=Integer.MIN_VALUE; //minus infinity
         for(int i=0; i<array.length; i++){
