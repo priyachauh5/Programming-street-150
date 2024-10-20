@@ -26,3 +26,7 @@ public class factorialSum28{
         factorial(n);
     }
 }
+
+//calculated factorial
+//reversed
+//sum
