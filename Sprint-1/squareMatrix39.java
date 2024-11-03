@@ -12,30 +12,69 @@ Output:
 7 8 9  */
 //------------------------------------------------------------------------------------------------------------------
 
-import java.util.*;
-public class squareMatrix39{
-    public static int squareMatrix(int size){
-        int num=1;
-        for(int i=0; i<size; i++){
-            for(int j=0; j<size; j++){
-                matrix[i][j]=num++;
-            }
-        }
-        return num;
-    }
-    //TO print square matrix
-    public static void printMatrix(int[][] matrix){
-        for(int i=0; i<size; i++){
-            for(int j=0; j<size; j++){
-                System.out.print(matrix[i][j]);
-            }
-        }
-    }
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the matrix number: ");
-        int size=sc.nextInt();
-        int[][] matrix= squareMatrix(size);
+
+import java.util.Scanner;
+
+public class modeOfNum45{
+
+        // Method to generate a square matrix filled with sequential numbers
+    // public static int[][] generateMatrix(int size) {
+    //     int[][] matrix = new int[size][size];
+    //     int num = 1;
+        
+    //     for (int i = 0; i < size; i++) {
+    //         for (int j = 0; j < size; j++) {
+    //             matrix[i][j] = num++;
+    //         }
+    //     }
+        
+    //     return matrix;
+    // }
+    // public static void main(String[] args) {
+    //     Scanner scanner = new Scanner(System.in);
+
+    //     System.out.print("Enter the size of the square matrix: ");
+    //     int size = scanner.nextInt();
+        
+    //     int[][] matrix = generateMatrix(size);
+        
+    //     System.out.println("Generated Square Matrix:");
+    //     printMatrix(matrix);
+
+        public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the size of the matrix: ");
+        int size = scanner.nextInt();
+        
+        int[][] matrix = generateMatrix(size);
         printMatrix(matrix);
+        
+        scanner.close();
     }
+
+    // Method to generate the square matrix filled with sequential numbers
+    public static int[][] generateMatrix(int size) {
+        int[][] matrix = new int[size][size];
+        int number = 1;
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                matrix[i][j] = number++;
+            }
+        }
+
+        return matrix;
+    }
+
+    // Method to print the matrix
+    public static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }
