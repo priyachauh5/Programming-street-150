@@ -20,7 +20,7 @@ public class modeOfNum45{
         public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Enter the size of the matrix: ");
+        System.out.print("Enter the size of matrix: ");
         int size = scanner.nextInt();
         
         int[][] matrix = generateMatrix(size);
