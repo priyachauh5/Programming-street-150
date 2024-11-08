@@ -11,26 +11,29 @@ Explanation: 7 has no divisors other than 1 and itself, so it is a prime number.
 
 import java.util.*;
 public class primeNum2{
-    public static void primeNo(int n){
+    public static boolean primeNo(int n){
         int m=n;
         //corner case
         if(m==2){
-            System.out.print("Number is prime");
+            return true;
         }
-        for(int i=1; i<m; i++){
-            if(m%2==0){
-                System.out.println("Number is not prime");
-                break;
-            }else{
-                System.out.println("Number is prime");
-                break;
+        for(int i=2; i<=m-1; i++){
+            if(m%i==0){
+                return false;
             } 
         }
+        return true;
     }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter any number: ");
         int n=sc.nextInt();
-        primeNo(n);
+        if(primeNo(n)){ //from above function
+            System.out.println(n+" Number is a prime number");
+        }else{
+            System.out.println(n+" Number is not prime");
+        }
     }
 }
+
+
