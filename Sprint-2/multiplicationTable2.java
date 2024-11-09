@@ -15,22 +15,29 @@ Output:
 
 import java.util.*;
 public class multiplicationTable2{
-    public static void multiplicationTable(int n, int m){
-        int result=0;
-        int i,j;
-        for(i=n; i<m; i++){
-            for(j=i; i<4; j++){
-                result=i*j;
+    public static void generateMultiplicationTable(int start, int end, int limit){
+        for(int i=1; i<=limit; i++){
+            for(int j=start; j<=end; j++){
+                // System.out.print("%d x %d=%d\t",j,i,j*i);
+                 //\t is a tab character.
+                //The first %d is for the current number in the range (num).
+                //The second %d is for the multiplier (e.g., 1, 2, 3...).
+                //The third %d is for the result of the multiplication.
+                System.out.printf(j+"x"+i+"="+j*i+"\t");
             }
+            System.out.println();
         }
-        System.out.print(i+"x"+i+"="+result);
-    } 
+    }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the starting range: ");
-        int n=sc.nextInt();
+        int start=sc.nextInt();
         System.out.print("Enter the ending range: ");
-        int m=sc.nextInt();
-         multiplicationTable(n,m);
+        int end=sc.nextInt();
+        int limit=10;
+        generateMultiplicationTable(start,end,limit);
     }
 }
+
+
+
