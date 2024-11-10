@@ -12,24 +12,21 @@ Explanation: Pairs that sum up to 5 are (1, 4) and (2, 3).*/
 import java.util.*;
 public class findAllPairOfElement4{
     public static void findSumUpToGivenSum(int arr[], int target){
-        int sum=0;
-        for(int i=0; i<arr.length; i++){
-            for(int j=0; j<arr.length; i++){
-                for(int k=i; k<j; k++){
-                    if((i+j)==target){
-                        sum=i+j;
-                        System.out.print("("+i+","+j+")");
-                        i++;
-                        j++;
-                    }
-                }
+        int start=0;
+        int end=arr.length-1;
+        while(start<end){
+            if(arr[start]+arr[end]<target){
+                start++;
+            }else if(arr[start]+arr[end]>target){
+                end--;
+            }else if(arr[start]+arr[end]==target){
+                System.out.println("Pair ("+arr[start]+","+arr[end]+")");
+                start++;
+                end--;
             }
-            System.out.println();
         }
-        System.out.println();
     }
     public static void main(String args[]){
-        System.out.print("Array are: ");
         int arr[]={1,2,3,4,5};
         int target=5;
         findSumUpToGivenSum(arr, target);
