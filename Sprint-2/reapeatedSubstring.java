@@ -9,6 +9,10 @@ Output: True
 Explanation: The substring "ab" is repeated.*/
 //------------------------------------------------------------------------------------------------------------------
 
-
+public class repeatedSubstring{
+    public static void main(String args[]){
+        
+    }
+}
 
 
