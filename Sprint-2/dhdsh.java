@@ -8,3 +8,5 @@ Input: string = "abab"
 Output: True
 Explanation: The substring "ab" is repeated.*/
 //------------------------------------------------------------------------------------------------------------------
+
+public class
