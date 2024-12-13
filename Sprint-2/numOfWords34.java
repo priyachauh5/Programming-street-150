@@ -15,7 +15,7 @@ public class numOfWords34{
             System.out.println("Number of words: 0");
         }else{
             String words[]=word.trim().split("\\s+");
-            System.out.println("Number of words:"+words.length);
+            System.out.println("Number of words: "+words.length);
         }
     }
     public static void main(String args[]){
