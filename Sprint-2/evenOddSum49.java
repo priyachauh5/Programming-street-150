@@ -26,7 +26,7 @@ public class evenOddSum{
         }
         System.out.println("Sum of odd number is: "+oddSum);
         int diff=oddSum-evenSum;
-        System.out.print("Difference of Even and Odd is: "+diff);
+        System.out.print("Difference of Even and Odd number is: "+diff);
     }
     public static void main(String args[]){
         int arr[]={1,2,3,4,5,6};
