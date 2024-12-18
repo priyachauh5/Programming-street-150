@@ -33,7 +33,7 @@ public class diagonalMatrix35 {
             for (int j = 0; j < m; j++) {  // Loop for columns
                 System.out.print(matrix[i][j] + " ");
             }
-            System.out.println(); // Move to the next line after printing a row
+            System.out.println(); // Move to next line after printing a row
         }
     }
 
